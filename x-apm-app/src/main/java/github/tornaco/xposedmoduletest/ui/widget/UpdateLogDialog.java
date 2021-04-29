@@ -16,7 +16,7 @@ public class UpdateLogDialog {
     public static void show(Activity context) {
         new AlertDialog.Builder(context)
                 .setTitle(R.string.title_app_update_log)
-                .setMessage(BuildConfig.UPDATE_LOGS)
+                .setMessage("NO")
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }

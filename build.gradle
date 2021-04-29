@@ -33,16 +33,16 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-static def getUpdateLogs() {
-    return 'cat ./UPDATE_LOG.md'.execute().text.replace(System.lineSeparator(), '\\n').trim()
-}
+//static def getUpdateLogs() {
+//    return 'cat UPDATE_LOG.md'.execute().text.replace(System.lineSeparator(), '\\n').trim()
+//}
 
 ext {
     dogfoodBuild = true
 
     versionCode = androidGitVersion.code() as int
     versionName = androidGitVersion.name()
-    updateLogs = getUpdateLogs() as String
+//    updateLogs = getUpdateLogs() as String
 
     minSdkVersion = 21
     compileSdkVersion = 26

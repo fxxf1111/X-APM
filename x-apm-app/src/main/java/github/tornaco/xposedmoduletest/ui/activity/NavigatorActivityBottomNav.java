@@ -354,7 +354,7 @@ public class NavigatorActivityBottomNav
         bottomSheet.findViewById(R.id.text_view_at_github).setOnClickListener(v -> navigateToWebPage(getString(R.string.app_rel_url)));
 
         TextView logView = bottomSheet.getSheetView().findViewById(android.R.id.text1);
-        logView.setText(BuildConfig.UPDATE_LOGS);
+        logView.setText("NO");
     }
 
     @Override
