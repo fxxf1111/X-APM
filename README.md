@@ -63,3 +63,9 @@ https://github.com/Tornaco/X-APM/tree/master/build_var_controls
 
 5.2 测试代码位于androidTest目录下。
 
+
+3. 编译说明
+
+需要替换 <SDK location>/platforms/android-26/android.jar //项目里面包含：building/hiddenapi/26/android.jar
+
+根目录：build_var_config 文件配置需要的功能模块。
