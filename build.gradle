@@ -27,6 +27,13 @@ allprojects {
         maven { url "https://jitpack.io" }
         mavenCentral()
     }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            //hidden-api文件夹里面的：android-26.jar
+            options.compilerArgs.add('-Xbootclasspath/p:hidden-api/android-27.jar')
+            options.compilerArgs.add('-Xbootclasspath/p:hidden-api/services-27.jar')
+        }
+    }
 }
 
 task clean(type: Delete) {

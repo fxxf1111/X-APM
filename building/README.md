@@ -43,6 +43,8 @@ app_comp_replace 移花接木
 
 play 是否是Play版本
 
+<string name="title_app_resident">后台保护</string>
+
 ### 执行gradle命令进行编译
 
 ```./gradlew x-apm-app:assembleRelease```

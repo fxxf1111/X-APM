@@ -98,12 +98,12 @@ public class AboutSettingsActivity extends WithWithCustomTabActivity {
             categories.add(personal);
             categories.add(open);
 
-            if (!isPlayVersion) {
-                Category help = new Category();
-                help.titleRes = R.string.title_help_dev;
-                help.addTile(new AppDonate(getActivity()));
-                categories.add(help);
-            }
+//            if (!isPlayVersion) {
+//                Category help = new Category();
+//                help.titleRes = R.string.title_help_dev;
+//                help.addTile(new AppDonate(getActivity()));
+//                categories.add(help);
+//            }
         }
     }
 }

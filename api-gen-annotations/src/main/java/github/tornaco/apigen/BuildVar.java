@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.SOURCE)
 public @interface BuildVar {
-    String config() default "./build_var_config";
+    String config() default "../build_var_config";
 
-    String supportedConfig() default "./build_supported_config";
+    String supportedConfig() default "../build_supported_config";
 }

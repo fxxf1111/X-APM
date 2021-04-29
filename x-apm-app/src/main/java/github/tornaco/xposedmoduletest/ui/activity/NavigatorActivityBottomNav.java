@@ -649,22 +649,22 @@ public class NavigatorActivityBottomNav
 
             // Donate
             boolean isPlayVersion = XAppBuildVar.BUILD_VARS.contains(XAppBuildVar.PLAY);
-            if (!isPlayVersion && XAPMManager.get().isServiceAvailable(true) && !AppSettings.isDonated(getActivity())) {
-                Suggestion suggestion = new Suggestion(
-                        getString(R.string.suggestion_donate),
-                        getString(R.string.suggestion_summary_donate,
-                                EmojiUtil.contactEmojiByUnicode(
-                                        EmojiUtil.DOG,
-                                        EmojiUtil.DOG,
-                                        EmojiUtil.DOG)),
-                        getString(R.string.suggestion_action_donate),
-                        R.drawable.ic_payment_black_24dp,
-                        (group, flatPosition, childIndex) -> {
-                            DonateActivity.start(getActivity());
-                            return false;
-                        });
-                suggestionList.add(suggestion);
-            }
+//            if (!isPlayVersion && XAPMManager.get().isServiceAvailable(true) && !AppSettings.isDonated(getActivity())) {
+//                Suggestion suggestion = new Suggestion(
+//                        getString(R.string.suggestion_donate),
+//                        getString(R.string.suggestion_summary_donate,
+//                                EmojiUtil.contactEmojiByUnicode(
+//                                        EmojiUtil.DOG,
+//                                        EmojiUtil.DOG,
+//                                        EmojiUtil.DOG)),
+//                        getString(R.string.suggestion_action_donate),
+//                        R.drawable.ic_payment_black_24dp,
+//                        (group, flatPosition, childIndex) -> {
+//                            DonateActivity.start(getActivity());
+//                            return false;
+//                        });
+//                suggestionList.add(suggestion);
+//            }
 
             // Debug mode.
             if (XAppLockManager.get().isServiceAvailable(true) && XAppLockManager.get().isDebug()) {
