@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">应用管理</string>
+    <string name="app_name">X-APM</string>
     <string name="app_code_name">X-APM</string>
     <string name="manage_overlay">管理叠加层</string>
     <string name="switch_on_text">已启用</string>
